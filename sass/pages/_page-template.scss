@@ -1,0 +1,54 @@
+.header-small {
+	height: 45vh;
+	background-image: linear-gradient(to right bottom, rgba($color-primary-light, .8), rgba($color-primary-dark, .8)), url(../images/puck-net-stock.jpeg);
+	background-size: cover;
+	background-position: top;
+	position: relative;
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 25vh, 0 100%);
+	clip-path: polygon(0 0, 100% 0, 100% 25vh, 0 100%);
+}
+
+.header-small__text-box {
+	position: absolute;
+    top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.section-programs {
+	background-color: $color-grey-light-1;
+	padding: 25rem 20rem;
+	margin-top: -20vh;
+}
+
+.program-pic {
+    width: 100%;
+    border-radius: 3px;
+}
+
+.grey-container {
+    background-color: rgb(218, 213, 213);
+    padding: 2rem;
+    border-radius: 3px;
+}
+
+.inline-link {
+    &:link,
+    &:visited {
+        color: $color-primary;
+        background-color: transparent;
+        text-decoration: none;
+        // text-transform: uppercase;
+        display: inline-block;
+        transition: all .2s;
+    }
+
+    &:hover,
+    &:active {
+        color: $color-white;
+        background-color: $color-grey-dark-3;
+        box-shadow: 0 1rem 2rem rgba($color-black, .4);
+        transform: rotate(5deg) scale(1.3);
+    }
+}

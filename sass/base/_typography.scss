@@ -5,6 +5,22 @@
 	}
 }
 
+.paragraph-blue {
+	color: $color-primary;
+	font-size: 1.6rem;
+	&:not(:last-child) {
+		margin-bottom: 1rem;
+	}
+}
+
+.paragraph-white {
+	color: $color-white;
+	font-size: 1.6rem;
+	&:not(:last-child) {
+		margin-bottom: 1rem;
+	}
+}
+
 .heading-primary {
 	color: #fff;
 	text-transform: uppercase;
@@ -62,6 +78,14 @@
 	}
 }
 .heading-tertiary {
+	font-size: 1.6rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: .3rem;
+}
+
+.heading-tertiary-white {
+	color: $color-white;
 	font-size: 1.6rem;
 	font-weight: 700;
 	text-transform: uppercase;
